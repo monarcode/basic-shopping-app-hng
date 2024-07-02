@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Router from "components/router";
+import globalStyles from "components/shared/global-styles";
+import { NavigationProvider } from "context/navigation";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet } from "react-native";
+import { THEME } from "theme";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={[globalStyles.androidSafeArea, styles.container]}>
+      <NavigationProvider>
+        <Router />
+      </NavigationProvider>
+      <ExpoStatusBar style="light" />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: THEME.colors["grey-green"],
   },
 });
