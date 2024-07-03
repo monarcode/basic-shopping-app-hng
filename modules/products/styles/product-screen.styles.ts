@@ -12,4 +12,13 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerIcon: { width: 24, height: 24, margin: "auto" },
+  countIndicator: {
+    height: 16,
+    width: 16,
+    borderRadius: 999,
+    backgroundColor: THEME.colors.highlight,
+    position: "absolute",
+    top: THEME.spacer * 2,
+    right: THEME.spacer * 2,
+  },
 });

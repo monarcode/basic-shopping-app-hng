@@ -1,5 +1,6 @@
 import Router from "components/router";
 import globalStyles from "components/shared/global-styles";
+import { CartProvider } from "context/cart";
 import { NavigationProvider } from "context/navigation";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { SafeAreaView, StyleSheet } from "react-native";
@@ -9,7 +10,9 @@ export default function App() {
   return (
     <SafeAreaView style={[globalStyles.androidSafeArea, styles.container]}>
       <NavigationProvider>
-        <Router />
+        <CartProvider>
+          <Router />
+        </CartProvider>
       </NavigationProvider>
       <ExpoStatusBar style="light" />
     </SafeAreaView>

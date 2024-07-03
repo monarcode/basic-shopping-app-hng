@@ -29,4 +29,10 @@ export const styles = StyleSheet.create({
     borderRadius: THEME.spacer * 2,
     backgroundColor: THEME.colors["grey-green"],
   },
+  image: {
+    width: "80%",
+    height: "80%",
+    objectFit: "contain",
+    margin: "auto",
+  },
 });
