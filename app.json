@@ -3,13 +3,20 @@
     "name": "Foota",
     "slug": "foota",
     "android": {
-      "package": "com.monarcode.foota"
+      "package": "com.monarcode.foota",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#223843"
+      }
     },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#223843"
     },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
     "extra": {
       "eas": {
         "projectId": "30c5103f-cdca-4f1d-a25e-7994e1984565"
