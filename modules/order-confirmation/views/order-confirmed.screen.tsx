@@ -9,7 +9,15 @@ const OrderCOnfirmed = () => {
   const { navigate } = useNavigation();
 
   return (
-    <View style={[globalStyles.fill, { paddingHorizontal: THEME.spacer * 4 }]}>
+    <View
+      style={[
+        globalStyles.fill,
+        {
+          paddingHorizontal: THEME.spacer * 4,
+          paddingBottom: THEME.spacer * 4,
+        },
+      ]}
+    >
       <View style={{ flex: 1, alignItems: "center" }}>
         <View
           style={[
