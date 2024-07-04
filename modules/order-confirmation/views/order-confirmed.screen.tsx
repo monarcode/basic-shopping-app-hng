@@ -35,7 +35,7 @@ const OrderCOnfirmed = () => {
               Order Successful
             </Text>
             <Text style={{ textAlign: "center" }}>
-              Your order has been confirmed, we will get back to you shortky
+              Your order has been confirmed, we will get back to you shortly
             </Text>
           </View>
         </View>
