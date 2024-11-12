@@ -3,6 +3,10 @@
 
 Foota is a fictional store that brings you a collection of top of the line, collectable footware. Making it easy to find, order and have your new footwear shipped to you.
 
+## The challenge
+
+Build an basic shopping app with little to know external depencies
+
 
 ## Demo
 
